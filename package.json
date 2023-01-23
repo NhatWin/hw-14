@@ -1,7 +1,7 @@
 {
   "name": "html-css-practice",
   "scripts": {
-    "start": "vite"
+    "start": "node server.js"
   },
   "devDependencies": {
     "prettier": "^2.7.1",

@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #f7f7f7;
+}
+
+header h1 {
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+  font-size: 45px;
+  font-family: Anton, sans-serif;
+  color: #e80202;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: Anton, sans-serif;
+}
+
+#home {
+  color: #0229e8;
+}
+
+#dashboard {
+  color: #ffe100;
+}
+
+#login {
+  color: #0bbd11;
+}
+
+nav button {
+  font-size: 30px;
+  color: #0bbd11;
+  font-family: Anton, sans-serif;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.login h2 {
+  text-align: center;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.post {
+  outline: solid 3px #8c8c8c;
+  width: 60%;
+  margin: 20px;
+}
+
+.post section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #8c8c8c;
+  color: #f7f7f7;
+}
+
+.post h2 {
+  margin: 10px;
+}
+
+.post h3 {
+  margin: 10px;
+}
+
+.post p {
+  margin: 10px;
+}
+
+.make-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.make-post h3 {
+  margin: 10px;
+  font-size: 50px;
+  font-family: Anton, sans-serif;
+  color: #8c8c8c;
+}
+
+.make-post button {
+  width: 60px;
+  font-size: 30px;
+  margin: auto;
+  color: #f7f7f7;
+  background-color: #8c8c8c;
+  border: none;
+  border-radius: 25px;
+}
+
+.make-post button:hover {
+  background-color: #e80202;
+}
