@@ -1,10 +1,11 @@
 const router = require("express").Router();
+const withAuth = require("../utils/authorize");
 
-router.get("/", async (_, res) => {
+router.get("/", withAuth, async (_, res) => {
   res.render("homepage");
 });
 
-router.get("/dashboard", async (_, res) => {
+router.get("/dashboard", withAuth, async (_, res) => {
   res.render("dashboard");
 });
 
