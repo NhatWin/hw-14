@@ -6,7 +6,7 @@ This is a site to make post about tech. Users can make an account and make post 
 
 ## Installation
 
-N/A
+https://challenge-14.herokuapp.com/
 
 ## Usage
 
