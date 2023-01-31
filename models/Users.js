@@ -1,18 +1,27 @@
-const { Model, DataType } = require("sequelize");
-const bcrypt = require("bcrypt");
-const connection = require("../config/connection");
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
 class User extends Model {}
+
 User.init(
   {
-    username: DataType.STRING,
-    password: DataType.STRING,
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    username: { type: DataTypes.STRING },
+    password: { type: DataTypes.STRING },
   },
   {
-    connection,
+    sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: "User",
   }
 );
+
+console.log(User);
+module.exports = User;
